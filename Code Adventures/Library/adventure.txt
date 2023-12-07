@@ -1,0 +1,13 @@
+Coding Challenge: Design and implement a class hierarchy for managing a library. The library should have the following features:
+
+Books, each with a title, author, ISBN, and number of copies available.
+Members, each with a name, address, and membership number.
+A borrowing system that allows members to borrow books and return them.
+Additional Considerations:
+
+Implement appropriate constructors, destructors, and member functions for each class.
+Use inheritance to create relationships between classes.
+Encapsulate data members and use accessors and mutators to control access.
+Implement error handling to ensure that invalid data is not entered.
+Document your code using comments.
+This challenge will help you to practice your object-oriented programming skills, as well as your understanding of data structures and algorithms. It will also help you to develop your problem-solving and debugging skills.
