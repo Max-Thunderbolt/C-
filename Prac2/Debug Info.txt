@@ -1,0 +1,20 @@
+
+Starting build...
+/usr/bin/g++ -g "/Users/maxvanderwalt/Desktop/Projects/UP/C++/2022/Semester 2/Pracs/Prac2/studentmain.cpp" -o "/Users/maxvanderwalt/Desktop/Projects/UP/C++/2022/Semester 2/Pracs/Prac2/studentmain"
+Undefined symbols for architecture x86_64:
+  "Matrix::resizeRows(int)", referenced from:
+      _main in studentmain-f87e9f.o
+  "Matrix::displayMatrix()", referenced from:
+      _main in studentmain-f87e9f.o
+  "Matrix::resizeColumns(int)", referenced from:
+      _main in studentmain-f87e9f.o
+  "Matrix::setMatrix()", referenced from:
+      _main in studentmain-f87e9f.o
+  "Matrix::Matrix(int, int)", referenced from:
+      _main in studentmain-f87e9f.o
+  "Matrix::~Matrix()", referenced from:
+      _main in studentmain-f87e9f.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+Build finished with error(s).
