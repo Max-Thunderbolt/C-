@@ -1,0 +1,46 @@
+readFile()
+we know when we are initialising a vector when numCol == 1
+we know when we are initialising a matrix when numCol > 1
+call the appropriate constructor
+
+
+
+for (int i = 0; i < cols; i++)
+    {
+        getline(infile,line);
+        if (line.length() > 1)
+        {
+            while (getline(infile, line, ' '))
+            {
+                stringstream ss(line);
+            }
+        }
+        else 
+        {
+            while (getline(infile, line))
+            {
+                stringstream ss(line);
+                if (numElementsNeeded != 0)
+                {
+                    for (int i = 0; i <= numElementsNeeded; i++)
+                    {
+                        ss >> value;
+                        // count++;
+                        cout << "value = " << value << endl;
+                        cout << "number of elements needed: " << numElementsNeeded << endl;
+                        cout << endl;
+                        for (int k = 0; k < rows; k++)
+                        {
+                            matrix[k] = new double[cols];
+
+                            for (int l = 0; l < cols; l++)
+                            {
+                                ss >> matrix[k][l];
+                            }
+                        }
+                    }
+                }
+                numElementsNeeded--;
+            }
+        }
+    }
