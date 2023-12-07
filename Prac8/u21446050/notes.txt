@@ -1,0 +1,39 @@
+SORT
+
+  // SortNode<T> *curr = head;
+    // SortNode<T> *next = NULL;
+    // SortNode<T> *prev = NULL;
+    // SortNode<T> *temp = NULL;
+
+    // while (curr != NULL)
+    // {
+    //     next = curr->next;
+    //     prev = curr->prev;
+    //     temp = curr;
+
+    //     while (prev != NULL && this->ascending ? prev->getValue() > temp->getValue() : prev->getValue() < temp->getValue()))
+    //     {
+    //         if (prev->prev == NULL)
+    //         {
+    //             head = temp;
+    //         }
+    //         else
+    //         {
+    //             prev->prev->next = temp;
+    //         }
+    //         temp->prev = prev->prev;
+    //         prev->prev = temp;
+    //         prev->next = temp->next;
+    //         if (temp->next != NULL)
+    //         {
+    //             temp->next->prev = prev;
+    //         }
+    //         else
+    //         {
+    //             tail = prev;
+    //         }
+    //         temp->next = prev;
+    //         prev = temp->prev;
+    //     }
+    //     curr = next;
+    // }

@@ -1,0 +1,57 @@
+#include <iostream> 
+
+#include "Calendar.h"
+#include "Event.h"
+
+using namespace std; 
+
+int main()
+{ 
+
+    cout << "" << endl;
+    cout << "-----Creating events-----" << endl;
+    cout << "" << endl;
+
+    Event ev1 = Event(1665479489, 1665479500, 1, "test1");
+    cout << ev1 << endl;
+    Event ev2 = Event(1665479000, 1665480000, 2, "test2");
+    cout << ev2 << endl;
+    Event ev3 = Event(1665480001, 1665490000, 3, "test3");
+    cout << ev3 << endl;
+
+    //Figure out how to make a calendar with these events
+
+    cout << "" << endl;
+    cout << "-----Creating event_data-----" << endl;
+    cout << "" << endl;
+
+    event_data ed1, ed2, ed3;
+
+    ed1.start = ev1.start; 
+    ed1.end = ev1.end;
+    ed1.id = ev1.id;
+    ed1.type = ev1.type;
+
+    ed2.start = ev2.start; 
+    ed2.end = ev2.end;
+    ed2.id = ev2.id;
+    ed2.type = ev1.type;
+
+    ed3.start = ev3.start; 
+    ed3.end = ev3.end;
+    ed3.id = ev3.id; 
+    ed3.type = ev3.type; 
+
+    vector<event_data> input; 
+    input.push_back(ed1);
+    input.push_back(ed2); 
+    input.push_back(ed3);
+    cout << "input size: " << input.size() << endl; // should display 3
+
+    cout << "" << endl;
+    cout << "-----Creating calendar-----" << endl;
+    cout << "" << endl;
+    Calendar cal = Calendar(input);
+    cout << cal << endl;
+    
+}
